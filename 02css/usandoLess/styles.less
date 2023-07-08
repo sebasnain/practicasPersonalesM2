@@ -1,0 +1,60 @@
+//variables
+
+@color-letra: blue;
+@fuentes-titulos: Helvetica;
+@fondo-menu: rgb(103, 74, 74);
+
+
+body{
+    background-color: rgb(14, 50, 38);
+}
+
+h1{
+    color: @color-letra;
+    font-family: @fuentes-titulos;
+}
+
+.menu{
+    ul{
+        display: flex;
+        width: 100%;
+        list-style: none;
+        li{
+            margin: 15px;
+            padding: 10px;
+            border: 4px solid black;
+            background: @fondo-menu;
+            a{
+                text-decoration: none;
+                color: black;
+            }
+        }
+    }
+}
+
+//mixins funciones o algo asi 
+//lo bueno es que los mixins se pueden reutilizar
+
+
+.estilizar_cajas(@color-text){
+   border: 1px solid red;
+   float:  left;
+   background-color: grey;
+   color: @color-text;
+    width: 100px;
+}
+
+
+//aplicar el mixins
+
+.caja{
+    .estilizar_cajas(rgb(30, 84, 56));
+   
+}
+
+.texto{
+    .estilizar_cajas(rgb(229, 142, 142));
+    font-family: 'Courier New', Courier, monospace;
+    width: 100px + 100px;
+}
+

@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="Image.jpeg" type="image/x-icon">
+    <link rel="stylesheet" href="styles.css">
+    <title>Bienestar</title>
+</head>
+<body>
+    <header class="headerNav" id="header">
+        <nav>
+            <div class="logo">
+                <a href="#"><img src="Logo Fundacion_Mesa de trabajo 1.png" alt="img-logo" style="width: 100%"></a>
+            </div>
+            <input type="checkbox" id="menu-toggle">
+            <label for="menu-toggle" class="menu-icon">
+                <span></span>
+            </label>
+            <ul class="nav-links">
+                <li><a href="#portada">Inicio</a></li>
+                <li><a href="#about">Acerca de</a></li>
+                <li><a href="#servicios">Servicios</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="contenedor" id="portada">
+        <div class="boxH1">
+            <img id="img-logo" src="Logo Fundacion_Mesa de trabajo 1.png" alt="img-logo" style="width: 100%; padding-bottom: 20px; margin-top: 0px">
+        </div>
+
+        <div class="circulo"></div>
+
+        <div class="custom-shape-divider-bottom-1687703692">
+            <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
+                <path d="M985.66,92.83C906.67,72,823.78,31,743.84,14.19c-82.26-17.34-168.06-16.33-250.45.39-57.84,11.73-114,31.07-172,41.86A600.21,600.21,0,0,1,0,27.35V120H1200V95.8C1132.19,118.92,1055.71,111.31,985.66,92.83Z" class="shape-fill"></path>
+            </svg>
+        </div>
+    </div>
+    <div class="contenedor2">
+        <a href="#contactos" class="btn"><button>Contacto</button></a>
+    </div>
+
+    <main id="about">
+        <div class="about">
+            <h3>¿Quiénes somos?</h3>
+            <p>
+                Somos parte del Proyecto de Insercion Socio-laboral destinado a los usuarios que asisten y son parte de los distintos talleres que ofrecemos como parte de la terapeútica. Los mismos se gestionan en el Hospital Distrital de Pico Truncado, en el marco del Programa de Asistencia Especial de Salud de la Provincia de Santa Cruz, dependiente del Ministerio de Salud y Ambiente.
+                Nuestra misión es proporcionarles una oportunidad de generar ingresos a través de la fabricación artesanal de productos, en un ambiente de trabajo inclusivo y terapéutico.
+            </p>
+        </div>
+        <div class="services" id="servicios">
+            <h3>Nuestros servicios</h3>
+            <div class="service-card">
+                <img src="service1.png" alt="service1">
+                <h4>Taller de cerámica</h4>
+                <p>Ofrecemos un taller de cerámica donde los usuarios pueden aprender a trabajar con arcilla y crear hermosas piezas de arte.</p>
+            </div>
+            <div class="service-card">
+                <img src="service2.png" alt="service2">
+                <h4>Taller de tejido</h4>
+                <p>Tenemos un taller de tejido donde los usuarios pueden aprender a tejer diferentes prendas y accesorios.</p>
+            </div>
+            <div class="service-card">
+                <img src="service3.png" alt="service3">
+                <h4>Taller de carpintería</h4>
+                <p>Contamos con un taller de carpintería donde los usuarios pueden aprender técnicas de carpintería y fabricar muebles.</p>
+            </div>
+        </div>
+    </main>
+
+    <section id="contactos">
+        <div class="contact-info">
+            <h3>Contacto</h3>
+            <p>Teléfono: 123-456789</p>
+            <p>Email: info@bienestar.com</p>
+        </div>
+        <div class="contact-form">
+            <h3>Envíanos un mensaje</h3>
+            <form action="submit_form.php" method="POST">
+                <input type="text" name="name" placeholder="Nombre" required>
+                <input type="email" name="email" placeholder="Email" required>
+                <textarea name="message" placeholder="Mensaje" required></textarea>
+                <button type="submit">Enviar</button>
+            </form>
+        </div>
+    </section>
+
+    <footer>
+        <p>Derechos reservados &copy; 2023 Bienestar</p>
+    </footer>
+</body>
+</html>

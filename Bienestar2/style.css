@@ -1,0 +1,320 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Nunito", sans-serif;
+}
+@import url("https://fonts.googleapis.com/css2?family=Nunito:wght@400;700&display=swap");
+
+/*  WAVY*/
+
+
+
+.custom-shape-divider-bottom-1687703692 {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  overflow: hidden;
+  line-height: 0;
+}
+
+.custom-shape-divider-bottom-1687703692 svg {
+  position: relative;
+  display: block;
+  width: calc(105% + 1.3px);
+  height: 204px;
+}
+
+.custom-shape-divider-bottom-1687703692 .shape-fill {
+  fill: #ffffff;
+}
+
+/** For mobile devices **/
+@media (max-width: 1125px) {
+  .custom-shape-divider-bottom-1687703692 svg {
+    width: calc(130% + 1.3px);
+    height: 127px;
+  }
+}
+
+.contenedor {
+  position: relative;
+  background: rgb(34, 193, 195);
+  background: linear-gradient(
+    0deg,
+    rgba(34, 193, 195, 1) 0%,
+    rgba(45, 70, 253, 1) 100%
+  );
+  min-height: 30vh;
+}
+
+button {
+  font-weight: 700;
+  background-color: rgb(253, 111, 45);
+  color: white;
+  padding: 9px 25px;
+  border: none;
+  border-radius: 50px;
+  cursor: pointer;
+  transition: all 0.3s ease 0s;
+}
+
+button:hover {
+  color: black;
+  transform: scale(1.1);
+  border: solid white 1.5px;
+}
+
+.contenedor2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 50px;
+}
+
+.circulo {
+  height: 130px;
+  width: 130px;
+  background-color: aqua;
+  border-radius: 100%;
+  position: absolute;
+  margin-left: 75px;
+  transform: translate(-50%, -100%);
+  opacity: 30%;
+  z-index: 5;
+}
+
+/*WAVY*/
+
+.headerNav {
+  z-index: 4;
+  position: fixed;
+  background-color: rgb(20, 41, 199);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 35px;
+  width: 100%;
+  padding: 5px 10%;
+}
+
+.headerNav .logo {
+  cursor: pointer;
+}
+
+.headerNav .logo img {
+  height: 45px;
+  width: auto;
+  /*animacion del log*/
+  transition: all 0.3s;
+}
+
+.headerNav .logo img:hover {
+  transform: scale(1.2); /*animacion del log*/
+}
+
+.headerNav .nav-links {
+  list-style: none;
+}
+
+.headerNav .nav-links li {
+  display: inline-block;
+  padding: 0 20px;
+}
+
+.headerNav .nav-links li:hover {
+  transform: scale(1.1);
+}
+
+.headerNav .nav-links a {
+  font-size: 700;
+  color: rgb(252, 251, 252);
+  text-decoration: none;
+}
+
+.headerNav .nav-links li a:hover {
+  color: rgb(253, 111, 45);
+  text-decoration: underline;
+}
+
+.headerNav .btn button {
+  font-weight: 700;
+  color: rgba(45, 70, 253, 1);
+  padding: 9px 25px;
+  background-color: rgb(248, 249, 249);
+  border: none;
+  border-radius: 50px;
+  cursor: pointer;
+  transition: all 0.3s ease 0s;
+}
+
+.headerNav .btn button:hover {
+  background-color: rgba(45, 70, 253, 1);
+  color: black;
+  transform: scale(1.1);
+  border: solid white 1.5px;
+}
+
+/* HEADER */
+header {
+  display: block;
+}
+div {
+  display: block;
+}
+
+h1 {
+  color: white;
+  font-size: 60px;
+  text-align: center;
+  padding-top: 100px;
+  padding-bottom: 30px;
+}
+
+h2 {
+  color: white;
+  font-size: 40px;
+  text-align: center;
+}
+
+main {
+  background-color: rgba(45, 70, 253, 1);
+  color: white;
+ padding-bottom: 10px;
+  height: 300px;
+  display: flex;
+  justify-content: center;
+}
+
+main .about {
+  height: 200px;
+  width: 500px;
+  text-align: center;
+}
+
+main .about h3 {
+  padding-top: 20px;
+}
+
+main .imgIlustrativa1 {
+  height: 200px;
+  width: 500px;
+}
+
+article {
+  color: rgba(45, 70, 253, 1);
+  padding: 40px;
+  height: 300px;
+  display: flex;
+  justify-content: center;
+}
+
+article .ofertas {
+  text-align: center;
+  padding-top: 100px;
+}
+
+/*contactos*/
+
+footer {
+  background-color: rgba(45, 70, 253, 1);
+  height: 270px;
+  display: flex;
+  align-items: center;
+}
+footer .contactos {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+footer .contactos svg {
+  color: white;
+  width: 70px;
+  height: 70px;
+}
+
+.contacto {
+  color: #ffffff;
+}
+
+@media (max-width: 1125px) {
+  .circulo {
+    width: 70px;
+    height: 70px;
+  }
+  .headerNav {
+    height: 22px;
+  }
+  main {
+    display: block;
+    text-align: center;
+    height: 380px;
+    width: 100%;
+    
+  }
+  main .about h3 {
+    padding-top: 0px;
+    text-align: center;
+    
+  }
+  main .about {
+   
+    height: 320px;
+    width: 350px;
+  }
+  #ilustacion2 {
+   
+    height: 40%;
+    width: 40%;
+    margin-right: 50%;
+    margin-left: 50%;
+    margin-top: 0;
+    margin-top: -40%;
+
+  }
+
+  article {
+   
+    height: 200px;
+  }
+
+  #ilustacion1 {
+    height: 150px;
+    width: 150px;
+   
+  }
+  article .ofertas {
+    padding-top: 3px;
+    
+  }
+  footer .contactos {
+    width: 100%;
+    display: block;
+    margin-left: 20%;
+  }
+}
+
+@media (max-width: 1125px) {
+
+  #ilustacion2{
+   display: none;
+  }
+
+  main {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    height: 450px;
+  }
+  
+  main .about {
+    height: 100%;
+    width: 340px;
+   
+  }
+
+}
